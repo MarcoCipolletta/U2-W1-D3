@@ -1,8 +1,10 @@
 body {
-  background-color: black;
   color: #742305;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
 }
+
+/* menu */
 aside ul {
   background-color: #fef7e2;
   padding: 20px;
@@ -38,7 +40,6 @@ aside .nav-big img {
 }
 aside .nav-big span {
   font-size: 1.65rem;
-  font-weight: 600;
 }
 
 aside .nav-normal {
@@ -51,5 +52,104 @@ aside .nav-normal {
   flex-shrink: 0;
   flex-basis: 100px;
   text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding-inline: 0.75rem;
+}
+
+/* Card container */
+.card-container {
+  margin: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Card */
+.card {
+  background-color: #fef7e2;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  object-fit: cover;
+  max-width: 100%;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+.card .info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  flex: 1 0 120px;
+  justify-content: center;
+}
+.info .prod-data {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  flex-grow: 2;
+  flex-basis: 66%;
+  text-align: center;
+}
+.info .prod-data .name {
+  flex-grow: 2;
+  flex-basis: 66%;
+  width: 100%;
+}
+.info .prod-data .name p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-top: 0.25rem;
+}
+
+.info .prod-data .price {
+  width: 100%;
+  flex-grow: 1;
+  flex-basis: 34%;
+  font-weight: 300;
+}
+
+.info button {
+  text-align: center;
+  width: 60%;
+  height: 50%;
+  background-color: #ffdf7e;
+  border: none;
+  border-radius: 40px;
   font-weight: 600;
+  color: #742305;
+}
+
+/* Article */
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-block: 3rem 1rem;
+}
+article {
+  background-color: #fef7e2;
+  margin-inline: 15px;
+  padding: 2rem;
+  border-radius: 30px;
+}
+article h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+article p {
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+article img {
+  width: 100%;
+  object-fit: cover;
 }
