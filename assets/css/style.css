@@ -279,4 +279,15 @@ article img {
   .card:nth-of-type(5) {
     display: block;
   }
+  article {
+    display: flex;
+    column-gap: 30px;
+  }
+  article div {
+    flex-basis: 50%;
+  }
+  article img {
+    flex-basis: 50%;
+    order: -1;
+  }
 }
