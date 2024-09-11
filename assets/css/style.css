@@ -169,6 +169,7 @@ article img {
   aside .nav-big {
     margin: 3px;
     order: 1;
+    width: initial;
   }
 
   aside .nav-normal {
@@ -205,5 +206,77 @@ article img {
   article h3 {
     font-size: 24px;
     margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+  }
+  /* menu */
+  aside {
+    display: flex;
+    flex-direction: column;
+  }
+  aside nav {
+    min-height: 100vh;
+  }
+  aside ul {
+    justify-content: start;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 250px;
+  }
+  aside ul li {
+    width: 100%;
+  }
+  aside .nav-big {
+    margin: 3px;
+    order: initial;
+    width: 100%;
+  }
+
+  aside .nav-normal {
+    margin: 3px;
+    margin-block: 10px;
+    flex-grow: initial;
+    flex-basis: auto;
+    height: 100px;
+  }
+  aside .nav-normal:nth-of-type(n + 4) {
+    order: initial;
+  }
+  /* main */
+  h1 {
+    padding: 2rem;
+  }
+  /* card */
+  .card {
+    flex-basis: 27%;
+  }
+  .card:nth-of-type(4) {
+    display: none;
+  }
+  /* article */
+
+  article {
+    margin-inline: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card {
+    flex-basis: 20%;
+  }
+  .card:nth-of-type(4) {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card {
+    flex-basis: 15%;
+  }
+  .card:nth-of-type(5) {
+    display: block;
   }
 }
